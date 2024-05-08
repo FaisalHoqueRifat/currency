@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link href="./output/output.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="flex flex-wrap items-center justify-center bg-no-repeat bg-cover w-full" style="background-image: url('./Image/taka.jpeg')">
+
+    <div class="navbar-center w-full h-12 bg-[#31363F] flex items-center justify-center">
+      <h2 class="text-[#D4D925] text-4xl font-bold">Exchange Rate</h2>
+    </div>
+
+    <div class="container block mx-auto text-center mt-24 bg-[#003C43] p-8 rounded-lg min-h-[45vh] w-[45vh]">
+      <form class="my-8">
+        <div class="amount">
+          <h2 class="text-4xl text-[#FFD0D0] mb-8 font-bold">Enter Amount</h2>
+          <input value="1" type="text" class="w-full border-none outline-none rounded-lg border-gray-300 text-2xl font-bold h-12 pl-2 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-200 ease-in-out shadow-md" />
+        </div>
+        <div class="dropdown flex justify-between items-center mt-8">
+          <div class="from">
+            <p class="text-gray-50 font-bold">From</p>
+            <div class="select-container flex justify-center items-center w-24 rounded-md border border-gray-300">
+              <img src="https://flagsapi.com/US/flat/64.png" class="max-w-[2rem]" />
+              <select name="from" class="text-base w-auto font-bold"></select>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-right-arrow-left text-3xl mt-4"></i>
+          <div class="to">
+            <p class="text-gray-50 font-bold">To</p>
+            <div class="select-container flex justify-center items-center w-24 rounded-md border border-gray-300">
+              <img src="https://flagsapi.com/BD/flat/64.png" class="max-w-[2rem]" />
+              <select name="to" class="text-base w-auto font-bold"></select>
+            </div>
+          </div>
+        </div>
+        <div class="msg my-8 text-[#FFFF80] text-2xl font-bold">1 USD = 109.7491 BDT</div>
+        <button class="w-full border-none outline-none rounded-lg h-12 bg-[#76ABAE] text-black text-lg font-bold cursor-pointer">Get Exchange Rate</button>
+      </form>
+    </div>
+
+    <footer class="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 w-full bg-[#222831] text-white p-8 fixed bottom-0">
+      <p class="block font-sans text-base antialiased font-normal leading-relaxed text-blue-gray-900">
+        © 2024 Currency Converter. All rights reserved.
+      </p>
+      <ul class="flex flex-wrap items-center gap-y-2 gap-x-8">
+        <li>
+          <a href="#"
+            class="block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-blue-gray-900 hover:text-blue-500 focus:text-blue-500">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-blue-gray-900 hover:text-blue-500 focus:text-blue-500">
+            License
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-blue-gray-900 hover:text-blue-500 focus:text-blue-500">
+            Contribute
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-blue-gray-900 hover:text-blue-500 focus:text-blue-500">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </footer>
+    
+
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
